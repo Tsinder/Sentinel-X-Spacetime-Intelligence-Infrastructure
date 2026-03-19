@@ -78,3 +78,18 @@ DECISION OPTIMIZATION
 REAL-WORLD ACTION
 ↓
 FEEDBACK & MODEL UPDATE
+
+---
+
+## 6. SYSTEM ARCHITECTURE
+
+```mermaid
+flowchart TD
+    A[Real-World Data] --> B[State Reconstruction]
+    B --> C[Causal Inference]
+    C --> D[Temporal World Model]
+    D --> E[Simulation Engine]
+    E --> F[Decision Engine]
+    F --> G[Action]
+    G --> H[Feedback]
+    H --> B
