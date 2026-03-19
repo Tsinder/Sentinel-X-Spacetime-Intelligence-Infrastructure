@@ -91,3 +91,12 @@ State(t)
 ├── Scenario A  
 ├── Scenario B  
 ├── Scenario N
+π* = argmax E[Utility − Risk]
+prediction → reality → update
+P(S_t | D_0:t)
+
+G* = argmax P(G | D)
+
+S(t+1) = f(S(t), A(t), ε)
+
+Q(s,a) = E[R_t + γ max Q(s',a')]
