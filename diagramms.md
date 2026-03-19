@@ -30,3 +30,34 @@ flowchart TD
     F --> G[Action]
     G --> H[Feedback]
     H --> B
+flowchart TD
+    S[Current State] --> A[Scenario A]
+    S --> B[Scenario B]
+    S --> C[Scenario C]
+
+    A --> OA[Outcome A]
+    B --> OB[Outcome B]
+    C --> OC[Outcome C]
+
+    OA --> D[Evaluation]
+    OB --> D
+    OC --> D
+
+    D --> FINAL[Optimal Decision]
+event = {
+    "timestamp": "...",
+    "source": "...",
+    "state": "...",
+    "uncertainty": "..."
+}
+Input:
+    State S(t)
+    Actions A
+
+Process:
+    Evaluate scenarios
+    Estimate outcomes
+    Calculate risk
+
+Output:
+    Optimal decision π*
